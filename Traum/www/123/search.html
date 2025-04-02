@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TRAUM</title>
+  <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./dist/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/searchStyle.css">
+  <script src="./js/jquery-3.2.1.min.js" charset="utf-8"></script>
+  <script src="./js/javascript.js" charset="utf-8"></script>
+</head>
+<body>
+  <div id="mail">
+    <a href="memberArea.php"><img src="./img/mailBox.png" alt=""></a>
+  </div>
+  <div id="Header">
+    <div id="Menu">
+      <div class="emptyBox"></div>
+      <img src="./img/menu.png" alt=""></div>
+    <div id="Logo"><a href="index.php"></a>
+      <div id="MemberInfoPC">
+        <div class="emptyBox"></div>
+        <div class="MemberFace"></div>
+        <a href="./login.html">會員專區</a>
+        <p>Chris Lo你好！</p>
+      </div>
+    </div>
+    <div id="MemberInfo">
+      <div class="emptyBox"></div>
+      <div class="MemberFace"></div>
+    </div>
+  </div>
+  <nav>
+    <a href="./aboutUs.html"><li id="aboutUs" class="navPic"></li></a>
+    <a href="./news.html"><li id="news" class="navPic"></li></a>
+    <a href="./search.html"><li id="search" class="navPic"></li></a>
+    <a href="./ranking.html"><li id="ranking" class="navPic"></li></a>
+    <a href="./q_a.html"><li id="q_a" class="navPic"></li></a>
+  </nav>
+  <form id="searchArea" action="" method="get">
+    <input id="keyWord" type="text" placeholder="搜尋">
+    <input type="submit" class="enter" value="查詢">
+  </form>
+  <form id="searchCondition" action="" method="get">
+    <div id="Area" class="condition">
+      <p>區域</p>
+      <li><input type="checkbox" name="area" value="n">北部</input></li>
+      <li><input type="checkbox" name="area" value="m">中部</input></li>
+      <li><input type="checkbox" name="area" value="s">南部</input></li>
+    </div>
+    <div id="Type" class="condition">
+      <p>類型</p>
+      <li></li>
+      <li><input type="checkbox" name="type" value="0">互動秀</input></li>
+      <li><input type="checkbox" name="type" value="1">大型魔術秀</input></li>
+      <li><input type="checkbox" name="type" value="2">一般舞臺魔術</input></li>
+      <li><input type="checkbox" name="type" value="3">沿桌近距離魔術</input></li>
+    </div>
+    <div id="Budget" class="condition">
+      <p>預算</p>
+      <li><input type="checkbox" name="budget" value="1">6000元以下</input></li>
+      <li><input type="checkbox" name="budget" value="2">6001元~12000元</input></li>
+      <li><input type="checkbox" name="budget" value="3">12001元~18000元</input></li>
+      <li><input type="checkbox" name="budget" value="4">18000元以上</input></li>
+    </div>
+  </form>
+  <div id="ResultBox">
+    <h2>●搜尋結果</h2>
+    <div id="sort">排序方式：
+      <select class="condition2" name="sort">
+        <option value="0">依綜合排行</option>
+        <option value="1">依地區</option>
+        <option value="2">依類型</option>
+        <option value="3">依預算</option>
+      </select>
+    </div>
+    <div class="result">
+      <img src="./img/member.png" alt="">
+      <p>陳政源</p>
+      <p>所在區域：北區</p>
+      <p>擅長類型：大型舞臺魔術</p>
+      <p>平均行情：1000元</p>
+    </div>
+    <div class="result">
+      <img src="./img/member.png" alt="">
+      <p>陳政源</p>
+      <p>所在區域：北區</p>
+      <p>擅長類型：大型舞臺魔術</p>
+      <p>平均行情：1000元</p>
+    </div>
+    <div class="result">
+      <img src="./img/member.png" alt="">
+      <p>陳政源</p>
+      <p>所在區域：北區</p>
+      <p>擅長類型：大型舞臺魔術</p>
+      <p>平均行情：1000元</p>
+    </div>
+    <div class="result">
+      <img src="./img/member.png" alt="">
+      <p>陳政源</p>
+      <p>所在區域：北區</p>
+      <p>擅長類型：大型舞臺魔術</p>
+      <p>平均行情：1000元</p>
+    </div>
+    <div class="result">
+      <img src="./img/member.png" alt="">
+      <p>陳政源</p>
+      <p>所在區域：北區</p>
+      <p>擅長類型：大型舞臺魔術</p>
+      <p>平均行情：1000元</p>
+    </div>
+    <div class="result">
+      <img src="./img/member.png" alt="">
+      <p>陳政源</p>
+      <p>所在區域：北區</p>
+      <p>擅長類型：大型舞臺魔術</p>
+      <p>平均行情：1000元</p>
+    </div>
+  </div>
+</body>
+</html>

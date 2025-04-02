@@ -1,0 +1,71 @@
+#MemberBlock.Container{
+  margin-left: 5%;
+}
+#MemberBlock ul,#MemberBlock li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#MemberBlock ul{
+  width: 100%;
+  height: 50px;
+}
+#MemberBlock li{
+  height: 50px;
+  width: 50%;
+  float: left;
+  overflow: hidden;
+  /*margin-right: 5px;*/
+  /*border-radius: 10px 10px 0px 0px;*/
+  background-color: #DD5D5C;
+}
+#MemberBlock li>a{
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.5rem;
+
+}
+.tab_content{
+  background-color: white;
+}
+td p{
+  margin: 0px;
+  text-align: right;
+}
+.enter{
+  /*display: block;*/
+  border: 0px;
+  width: 100%;
+  height: 50px;
+  background-color: #DD5D5C;
+  font-size: 1.5rem;
+  color: #F4F8F3;
+}
+table{
+  width: 100%;
+  height: 150px;
+}
+tr{
+  height: 50px;
+}
+/*----------------Tablat start-----------------*/
+@media screen and (min-width: 640px) {
+#MemberBlock.Container{
+  margin-left: 20%;
+  width: 60%;
+}
+
+}
+/*-----------------Tablat end------------------*/
+
+/*------------------PC start-------------------*/
+@media screen and (min-width: 1280px) {
+  #MemberBlock.Container{
+    margin-top: 20px;
+    margin-left: 25%;
+    width: 50%;
+  }
+
+}
+/*-------------------PC end--------------------*/

@@ -1,0 +1,255 @@
+body{
+  margin: 0px;
+  font-family: '微軟正黑體';
+}
+nav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(18,79,86,0.9);
+  overflow: auto;
+  display: none;
+}
+nav>li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+nav>li>a{
+  display: block;
+  width: 100%;
+  height: 50px;
+  color: white;
+  margin-top: 50px;
+  font-size: 1.5rem;
+  line-height: 50px;
+  text-align: center;
+}
+#header{
+  width: 100%;
+  height: 100vh;
+}
+#sidePoint{
+  position: fixed;
+  top:50%;
+  right:0px;
+  z-index: 5;
+  cursor:pointer;
+}
+#sidePoint>li{
+  width:10px;
+  height:10px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.5) inset,-1px -1px 1px rgba(0,0,0,0.5) inset;
+  list-style-type: none;
+}
+#menuIcon{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+  top: 10px;
+  left: 10px;
+}
+#banner{
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+#memberBox{
+  position: absolute;
+  width: 200px;
+  height: 80px;
+  top: 10px;
+  right: 20px;
+}
+#memberBox>img:nth-child(1){
+  width: 56px;
+  height: 56px;
+  float: left;
+  border-radius: 60px;
+  border: 2px solid #124F56;
+  margin-right: 10px;
+}
+#memberBox a:nth-child(4)>img{
+  float: left;
+  width: 40px;
+  height: 25px;
+  margin: 2.5px 10px 2.5px 10px;
+}
+#memberBox a:nth-child(5)>img{
+  float: left;
+  width: 28px;
+  height: 20px;
+  margin: 6px 0 6px 10px;
+}
+#unread{
+  float: left;
+  width: 20px;
+  height: 30px;
+  color: #FFF;
+  margin: 4px 5px 0 5px;
+  font-size: 1.1rem;
+}
+#userName,#session{
+  float: left;
+  width: 55px;
+  height: 30px;
+  color: #FFF;
+  margin: 0 5px 0 5px;
+  font-size: 1.1rem;
+}
+#slogan{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+}
+#slogan>p{
+  color: #FFF;
+  font-size: 3rem;
+  text-align: center;
+}
+#AboutUs{
+  width: 100%;
+  height: 100vh;
+}
+#AboutUs>.container{
+  width: 70%;
+  height: 33.33vh;
+  position: relative;
+  margin-left: 15%;
+}
+.container>img{
+  height: 80%;
+  /* position: absolute; */
+  /* top:0; */
+  /* left: 0; */
+}
+.container>.imgBox{
+  width: 65%;
+  height: 70%;
+  border: 4px solid #124F56;
+  position: absolute;
+  top: 20%;
+  background-color: rgba(249,249,249,0.5);
+}
+.imgBox>p{
+  display: block;
+  font-size: 2.5rem;
+  height: 60px;
+  line-height: 90px;
+  color: #124F56;
+  border-bottom: 4px solid #F6DF6F;
+}
+.imgBox span{
+  display: block;
+  font-size: 1.2rem;
+  line-height: 60px;
+}
+#AboutUs>.container:nth-child(even)>img{
+  float: right;
+}
+.container:nth-child(even)>.imgBox{
+  right: 30%;
+}
+.container:nth-child(odd)>.imgBox{
+  left: 30%;
+}
+.container:nth-child(odd)>.imgBox>p,
+.container:nth-child(odd)>.imgBox>span{
+  margin: 0 5% 0 10%;
+}
+.container:nth-child(even)>.imgBox>p,
+.container:nth-child(even)>.imgBox>span{
+  margin: 0 15% 0 5%;
+}
+#News{
+  width: 100%;
+  height: 100vh;
+}
+#News>.Box{
+  width: 30%;
+  height: 100vh;
+  border-right: 8px solid #F6DF6F;
+}
+#News>.Box>p{
+  font-size: 5rem;
+  color: #F6DF6F;
+  margin: 0;
+  text-align: right;
+  text-shadow: 4px -4px #717B7C;
+}
+#QandA{
+  width: 100%;
+  height: 100vh;
+}
+#QandA>p, #QandA span{
+  font-size: 2.5rem;
+}
+#QandA>p>img{
+  margin-left: 30px;
+}
+#QandA span{
+  border-bottom: 10px solid #F6DF6F;
+  margin-left: 8%;
+}
+#QandA>ul{
+  margin-left: 8%;
+  width: 15%;
+  float: left;
+  padding: 0;
+}
+#QandA>ul>img{
+  /* width: 180px; */
+  height: 100px;
+  margin-bottom: 50px;
+}
+#QandA>ul>li{
+  font-size: 1.5rem;
+  color: #50A49E;
+}
+#QandA>ul>li>a{
+  color: #50A49E;
+}
+#Footer{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+#footerBGI{
+  width: 100%;
+  height: 100%;
+}
+#footerLogo{
+  position: absolute;
+  width: 44.39%;
+  top: 37%;
+  left: 40%;
+}
+#mediaBox{
+  position: absolute;
+  width: 25%;
+  bottom: 25%;
+  left: 50%;
+}
+#mediaBox img{
+  width: 20%;
+}
+#mediaBox>a:nth-child(2)>img{
+  width: 23%;
+  margin: 0 15% 0 15%;
+}
+#Footer>p{
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: #17515A;
+}

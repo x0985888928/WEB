@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>估價單</title>
+  <!-- <link rel="stylesheet" href="./dist/css/bootstrap.min.css"> -->
+  <!-- <link rel="stylesheet" href="./dist/css/bootstrap-theme.min.css"> -->
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="./css/loginStyles.css">
+  <script src="./js/jquery-3.2.1.min.js" charset="utf-8"></script>
+  <script src="./js/javascript.js" charset="utf-8"></script>
+  <style media="screen">
+    .Container{
+      width: 70%;
+      margin-left: 15%;
+      overflow: auto;
+      border: 5px solid #17515A;
+      padding: 10px;
+    }
+    .enter{
+      float: left;
+      width: 20%;
+      margin-left: 20%;
+    }
+    h1{
+      text-align: center;
+      font-size: 3rem;
+    }
+    td p{
+      text-align: center;
+    }
+    input[type = text], textarea{
+      border: 1px solid #17515A;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div id="title">
+    <img src="./img/icon/icon_menu2.png" alt="" id="menuIcon">
+    <img src="./img/Logo.png" alt="" id="Logo">
+    <div id="memberBox">
+      <img src="./img/icon/member.png" alt="">
+      <p id="userName">羅天祐</p>
+      <a href="" id="session">LogIn</a>
+      <a href=""><img src="./img/icon/icon_member.png" alt=""></a>
+      <a href=""><img src="./img/icon/icon_mail.png" alt="">
+      <p id="unread">(0)</p></a>
+    </div>
+  </div>
+  <nav>
+    <li><a href="">搜尋</a></li>
+    <li><a href="">聯絡我們</a></li>
+    <li><a href="">排行榜</a></li>
+    <li><a href="">最新消息</a></li>
+    <li><a href="">常見問題</a></li>
+  </nav>
+  <h1>估價單</h1>
+  <div class="Container">
+    <form action="" method="get">
+      <table>
+        <tr>
+        <td width="20%"><p>活動日期：</p></td>
+        <td width="60%"><input type='text'></td>
+      </tr>
+        <tr>
+          <td width="20%"><p>活動開始時間：</p></td>
+          <td><select name="StartTime">
+            <option value="0">00:00</option>
+            <option value="1">01:00</option>
+            <option value="2">02:00</option>
+            <option value="3">03:00</option>
+            <option value="4">04:00</option>
+            <option value="5">05:00</option>
+            <option value="6">06:00</option>
+            <option value="7">07:00</option>
+            <option value="8">08:00</option>
+            <option value="9">09:00</option>
+            <option value="10">10:00</option>
+            <option value="11">11:00</option>
+            <option value="12">12:00</option>
+            <option value="13">13:00</option>
+            <option value="14">14:00</option>
+            <option value="15">15:00</option>
+            <option value="16">16:00</option>
+            <option value="17">17:00</option>
+            <option value="18">18:00</option>
+            <option value="19">19:00</option>
+            <option value="20">20:00</option>
+            <option value="21">21:00</option>
+            <option value="22">22:00</option>
+            <option value="23">23:00</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td width="20%"><p>預算：</p></td>
+          <td width="60%">
+            <select name="budget">
+            <option value="1">6000元以下</option>
+            <option value="2">6001元~12000元</option>
+            <option value="3">12001元~18000元</option>
+            <option value="4">18000元以上</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td width="20%"><p>地址：</p></td>
+          <td width="60%"><select name="StartTime">
+            <option value="0">新北市</option>
+            <option value="1">台北市</option>
+            <option value="2">桃園縣</option>
+            <option value="3">新竹縣</option>
+            <option value="4">苗栗縣</option>
+            <option value="5">台中市</option>
+            <option value="6">南投縣</option>
+            <option value="7">彰化縣</option>
+            <option value="8">雲林縣</option>
+            <option value="9">嘉義縣</option>
+            <option value="10">台南市</option>
+            <option value="11">高雄市</option>
+            <option value="12">屏東縣</option>
+            <option value="13">宜蘭縣</option>
+            <option value="14">花蓮縣</option>
+            <option value="15">台東縣</option>
+            <option value="16">金門縣</option>
+            <option value="17">連江縣</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td width="20%"></td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td><p>場地類型：</p></td>
+          <td>
+            <input type="radio" name="place" value="0">餐廳
+            <input type="radio" name="place" value="1">戶外展場
+            <input type="radio" name="place" value="2">展場
+            <input type="radio" name="place" value="3">其他
+            <input type="text">
+          </td>
+        </tr>
+        <tr>
+          <td width="20%"><p>表演類型：</p></td>
+          <td>
+            <input type="checkbox" name="type" value="0">互動秀
+            <input type="checkbox" name="type" value="1">大型魔術秀
+            <input type="checkbox" name="type" value="2">一般舞臺魔術
+            <input type="checkbox" name="type" value="3">沿桌近距離魔術
+            <input type="checkbox" name="type" value="4">其他
+            <input type="text"></td>
+        </tr>
+        <tr>
+          <td width="20%"><p>觀眾年齡層：</p></td>
+          <td>
+            <input type="checkbox" name="ageRange" value="0">兒童
+            <input type="checkbox" name="ageRange" value="1">青年
+            <input type="checkbox" name="ageRange" value="2">壯年
+            <input type="checkbox" name="ageRange" value="3">中年
+            <input type="checkbox" name="ageRange" value="0">老年
+          </td>
+        </tr>
+        <tr>
+          <td width="20%"><p>觀眾人數：</p></td>
+          <td width="60%">
+            <select name="howMany">
+            <option value="1">40人以下</option>
+            <option value="2">40人~100人</option>
+            <option value="3">101人~200人</option>
+            <option value="4">201人~500人</option>
+            <option value="5">500人以上</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td width="20%"><p>表演長度：</p></td>
+          <td width="60%">
+            <select name="hoeLong">
+            <option value="1">10分鐘以下</option>
+            <option value="2">11分鐘~20分鐘</option>
+            <option value="3">21分鐘~40分鐘</option>
+            <option value="4">40分鐘以上</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td width="20%"><p>現場器材：</p></td>
+          <td>
+            <input type="checkbox" name="equipment" value="0">音響
+            <input type="checkbox" name="equipment" value="1">有線麥克風
+            <input type="checkbox" name="equipment" value="2">無線麥克風
+            <input type="checkbox" name="equipment" value="3">燈光設備
+            <input type="checkbox" name="equipment" value="4">其他
+            <input type="text">
+          </td>
+        </tr>
+        <tr>
+          <td width="20%"><p>音檔繳交方式：</p></td>
+          <td>
+            <input type="radio" name="radio" value="0">USB
+            <input type="radio" name="radio" value="1">光碟
+            <input type="radio" name="radio" value="2">雲端
+            <input type="radio" name="radio" value="4">其他
+            <input type="text">
+          </td>
+        </tr>
+        <tr>
+          <td width="20%"><p>其他需求：</p></td>
+          <td>
+            <textarea name="otherRequirement" rows="8" cols="80"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input class="enter" type='submit' value='重新填寫'>
+          <input class="enter" type='submit' value='送出表單'></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+
+</body>
+</html>

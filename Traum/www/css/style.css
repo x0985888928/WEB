@@ -1,0 +1,293 @@
+html{
+  font-size: 75%;
+  font-family: "微軟正黑體";
+}
+p{
+  font-family: "微軟正黑體";
+
+}
+body{
+  margin: 0px;
+  padding: 0px;
+  background-color: #F4F8F3;
+}
+a{
+    text-decoration: none;
+    color: #17515A;
+    font-family: "微軟正黑體";
+}
+#Header{
+  height: 100px;
+  /*overflow: auto;*/
+}
+#mail{
+  position: fixed;  /*固定在網頁上不隨卷軸移動，若要隨卷軸移動用absolute*/
+  top: 50%;  /*設置垂直位置*/
+  right: -20px;  /*設置水平位置，依所放的內容多寡需要自行手動調整*/
+  padding: 10px 20px;
+  z-index: 2;
+}
+nav{
+  width: 100%;
+  overflow: auto;
+}
+nav>a li{
+  text-align: center;
+  list-style-type: none;
+  float: left;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+}
+
+#aboutUs{
+  background-image: url('../img/PH_About.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  background-color: #1A4F56;
+}
+#news{
+  background-image: url('../img/PH_News.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  background-color: #57B4AD;
+}
+#search{
+  background-image: url('../img/PH_Search.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  background-color: #1A4F56;
+}
+#ranking{
+  background-image: url('../img/PH_Ranking.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  background-color: #57B4AD;
+}
+#q_a{
+  background-image: url('../img/PH_Q&A.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  background-color: #1A4F56;
+}
+.navbar {
+  margin-bottom: 0px;
+  border: 0px;
+}
+#Menu{
+  width: 20%;
+  height: 100px;
+  float: left;
+  background-color: #F6DF6F;
+}
+#Menu img{
+  width: 50%;
+  max-width: 50px;
+  margin-left: 25%;
+}
+#Logo{
+  width: 60%;
+  height: 100px;
+  overflow: auto;
+  float: left;
+}
+#Logo>a{
+  display: block;
+  /*width: 100%;*/
+  height: 100px;
+  background-color: #F6DF6F;
+  background-image: url('../img/Logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  /*background-attachment: fixed;*/
+  background-position: 50% 50%;
+}
+.emptyBox{
+  height: 25%;
+  background-color: #F6DF6F;
+}
+
+#MemberInfo{
+  width: 20%;
+  height: 100px;
+  float: left;
+  background-color: #F6DF6F;
+}
+.MemberFace{
+  margin-left: 20%;
+  /*margin-top: 10%;*/
+  width: 50px;
+  /*max-width: 50px;*/
+  height: 50px;
+  /*padding-bottom: 50%;*/
+  border-radius: 50%;
+  border: solid 1px gray;
+  background-image: url('../img/member.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-color: #F6DF6F;
+}
+
+#MemberInfoPC{
+  width: 20%;
+  height: 100px;
+  display: none;
+  float: right;
+}
+#Footer{
+  height: 100px;
+  background-color: #1A4F56;
+}
+#Footer p{
+  color: #F4F8F3;
+  font-size: 1rem;
+  line-height: 100px;
+  text-align: center;
+  /*word-wrap:break-word;*/
+}
+/*----------tab---------------------------*/
+
+
+/*----------------Tablat start-----------------*/
+@media screen and (min-width: 640px) {
+
+}
+/*-----------------Tablat end------------------*/
+
+/*------------------PC start-------------------*/
+@media screen and (min-width: 1280px) {
+  html{
+    font-size: 100%;
+  }
+  body{
+    background-color: #F4F8F3;
+  }
+  #Menu{
+    display: none;
+  }
+  #Logo{
+    width: 100%;
+    height: 100px;
+    overflow: auto;
+  }
+  #Logo>a{
+    display: block;
+    width: 80%;
+    height: 100px;
+    background-color: #F6DF6F;
+    background-image: url('../img/Logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    /*background-attachment: fixed;*/
+    background-position: 62.5% 50%;
+    float: left;
+  }
+  #MemberInfo{
+    display: none;
+  }
+  #MemberInfoPC{
+    display: block;
+    background-color: #F6DF6F;
+    z-index: 2;
+  }
+  .MemberFace{
+    margin-left: 40%;
+    margin-top: 0;
+  }
+  #MemberInfoPC a,#MemberInfoPC p{
+    line-height: 15px;
+    font-size: 0.5rem;
+    float: left;
+    margin: 0px 5px 0px 0px;
+  }
+  #MemberInfoPC a{
+    margin-left: 43%;
+  }
+
+  nav>a li{
+    text-align: center;
+    list-style-type: none;
+    float: left;
+    width: 20%;
+    height: 40px;
+    line-height: 40px;
+  }
+  #aboutUs{
+    background-image: url('../img/PC_CH_About.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-color: #17515A;
+  }
+  #news{
+    background-image: url('../img/PC_CH_News.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-color: #17515A;
+  }
+  #search{
+    background-image: url('../img/PC_CH_Search.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-color: #17515A;
+  }
+  #ranking{
+    background-image: url('../img/PC_CH_Ranking.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-color: #17515A;
+  }
+  #q_a{
+    background-image: url('../img/PC_CH_Q&A.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-color: #17515A;
+  }
+  #aboutUs:hover{
+    background-image: url('../img/PC_EN_About.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-color: #F6DF6F;
+  }
+  #news:hover{
+    background-image: url('../img/PC_EN_News.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-color: #F6DF6F;
+  }
+  #search:hover{
+    background-image: url('../img/PC_EN_Search.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-color: #F6DF6F;
+  }
+  #ranking:hover{
+    background-image: url('../img/PC_EN_Ranking.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-color: #F6DF6F;
+  }
+  #q_a:hover{
+    background-image: url('../img/PC_EN_Q_A.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-color: #F6DF6F;
+  }
+
+}
+/*-------------------PC end--------------------*/

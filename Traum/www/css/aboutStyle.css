@@ -1,0 +1,107 @@
+#Banner>img{
+  width: 100%;
+  margin-bottom: 30px;
+}
+#AboutUs{
+  /*height: 310px;*/
+  overflow: auto;
+}
+.UsBox{
+  overflow: auto;
+  width: 100%;
+  position: relative;
+}
+.UsBox img{
+  width: 100%;
+  vertical-align: bottom;
+  opacity: 0.6;
+}
+.UsBox h4{
+  /*display: inline-block;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -36px;
+  margin-top: -25px;
+  color: black;
+  font-size: 3rem;
+  z-index: 2;
+}
+.contentBox{
+  display: none;
+}
+#history{
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#imgBox{
+  display: none;
+}
+/*-----------------------PC start---------------------------*/
+@media screen and (min-width: 1280px) {
+  .UsBox{
+    width: 100%;
+    float: left;
+    background-color: #50A49E;
+    margin-bottom: 30px;
+  }
+  .UsBox:nth-child(2){
+    background-color: #F6DF6F;
+  }
+  .UsBox img{
+    opacity: 1;
+    width: 70%;
+    border-right: 50px solid #F4F8F3;
+  }
+  .UsBox:nth-child(2) img{
+    border-right: 0px solid #F4F8F3;
+    border-left: 50px solid #F4F8F3;
+  }
+  .UsBox h4{
+    font-size: 5rem;
+  }
+  .contentBox{
+    display: block;
+    width: 30%;
+    /*margin-left: -5%;*/
+    margin-top: 20%;
+    height: 100%;
+    float: left;
+    font-size: 3rem;
+    text-align: center;
+    /*background-color: #50A49E;*/
+  }
+  .UsBox:nth-child(2) img,.UsBox:nth-child(odd) .contentBox{
+    float: right;
+  }
+  .UsBox:nth-child(odd) h4{
+    top : 10%;
+    left: 82%;
+  }
+  .UsBox:nth-child(2) h4{
+    top : 10%;
+    left: 12%;
+  }
+  #history{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  #imgBox{
+    display: block;
+    width: 90%;
+    margin-left: 5%;
+    overflow: auto;
+  }
+  #imgBox img{
+    width: 49%;
+    float: left;
+  }
+  #imgBox img:nth-child(odd){
+    margin-right: 2%;
+  }
+  #imgBox img:nth-child(3), #imgBox img:nth-child(4){
+    margin-top: 30px;
+  }
+}
+/*-----------------------PC end---------------------------*/

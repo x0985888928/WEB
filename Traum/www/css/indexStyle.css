@@ -1,0 +1,270 @@
+#Banner img{
+  width: 100%;
+}
+
+#NeedWantBox.Container{
+  width: 100%;
+}
+#NeedWantBox.Container img{
+
+}
+
+#News.Container{
+  overflow: visible;
+  margin-left: 10%;
+  width: 80%;
+  height: 260px;
+  background-color: #50A49E;
+}
+#AboutUs{
+  /*height: 310px;*/
+  overflow: auto;
+}
+.UsBox{
+  width: 100%;
+  position: relative;
+}
+.UsBox img{
+  width: 100%;
+  vertical-align: bottom;
+  opacity: 0.6;
+}
+.UsBox p{
+  /*display: inline-block;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -36px;
+  margin-top: -25px;
+  color: black;
+  font-size: 3rem;
+  z-index: 2;
+}
+
+#Ranking.Container{
+  overflow: auto;
+  margin-left: 5%;
+  background-color: #F4F8F3;
+  margin-top: 5px;
+}
+
+#Footer{
+  height: 100px;
+  background-color: #1A4F56;
+}
+#Footer p{
+  color: #F4F8F3;
+  font-size: 1rem;
+  line-height: 100px;
+  text-align: center;
+  /*word-wrap:break-word;*/
+}
+.Container{
+  width: 90%;
+  background-color: #F6DF6F;
+}
+
+/*------------------tab-----------------*/
+.abgne_tab ul,.abgne_tab li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.abgne_tab {
+  clear: left;
+  width: 100%;
+  margin: 10px 0;
+}
+ul.tabs {
+  width: 100%;
+  height: 30px;
+  border-bottom: 3px solid #DD5D5C;
+  /*border-left: 1px solid #999;*/
+}
+ul.tabs li {
+  width: 25%;
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  position: relative;
+  margin-right: 10px;
+  /*margin-bottom: -1px;	/* 讓 li 往下移來遮住 ul 的部份 border-bottom */
+  border-bottom: 3px solid #DD5D5C;
+  border-left: none;
+  background: #F6DF6F;
+  border-radius: 5px 5px 0px 0px;
+}
+ul.tabs li a {
+  text-align: center;
+  display: block;
+  padding: 0 20px;
+  color: #000;
+  /*border-bottom: : 1px solid #F6DF6F;*/
+  text-decoration: none;
+}
+ul.tabs li a:hover {
+  background: #DD5D5C;
+}
+ul.tabs li.active  {
+  background: #DD5D5C;
+  border-bottom: 1px solid #DD5D5C;
+}
+ul.tabs li.active a:hover {
+  background: #DD5D5C;
+  }
+div.tab_container {
+  clear: left;
+  width: 100%;
+  border: 3px solid #DD5D5C;
+  border-top: none;
+  /*background: #DD5D5C;*/
+}
+div.tab_container .tab_content {
+  padding: 20px;
+  /*height: 200px;*/
+}
+div.tab_container .tab_content h2 {
+  margin: 0 0 20px;
+}
+
+.areaRanking{
+  float: left;
+  overflow: auto;
+  margin-right: 5%;
+}
+/*----------tab---------------------------*/
+
+
+/*----------------Tablat start-----------------*/
+@media screen and (min-width: 640px) {
+
+}
+/*-----------------Tablat end------------------*/
+
+/*------------------PC start-------------------*/
+@media screen and (min-width: 1280px) {
+  #NeedWantBox.Container{
+    margin-top: 20px;
+    /*margin-left: 5%;*/
+    margin-bottom: 20px;
+    /*width: 90%;*/
+    overflow: auto;
+    background-color: #F4F8F3;
+  }
+  #NeedWantBox.Container img{
+    width: 50%;
+    float: left;
+    /*height: 100px;*/
+  }
+
+  #News.Container{
+    margin-bottom: 20px;
+    overflow: visible;
+    position: relative;
+  }
+  .box{
+    width: 20%;
+    float: left;
+    background-color: #50A49E;
+    overflow: auto;
+  }
+  .NewsBox{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 78%;
+    float: left;
+    overflow: auto;
+    background-color: #F4F8F3;
+  }
+  .box h2,.box h3{
+    text-align: center;
+    color: #17515A;
+  }
+  .box h2{
+    margin-top: 40px;
+  }
+  .box a{
+    margin-right: 10%;
+    text-align: right;
+    text-decoration: underline;
+    display: block;
+  }
+  .hover:hover{
+    opacity:0;
+  }
+  #News img{
+    height: 50%;
+    top: 48%;
+    left: -4%;
+    position: absolute;
+  }
+  .NewsBox table{
+    border: 5px solid #F4F8F3;
+  }
+  .NewsBox td{
+    border-bottom: 1px solid #17515A;
+  }
+  .NewsBox tr>td:nth-child(1){
+    border-right: 1px solid #17515A;
+  }
+  .NewsBox tr:nth-child(11)>td{
+    border-bottom: 1px solid #F4F8F3;
+  }
+  .NewsBox tr>td{
+    padding-left: 15px;
+  }
+  #AboutUs{
+    margin-bottom: 20px;
+    overflow: auto;
+  }
+  .UsBox{
+    width: 33.33%;
+    float: left;
+    position: relative;
+  }
+  .UsBox p{
+    margin-left: -48px;
+    margin-top: -33.5px;
+  }
+
+  #Ranking.Container{
+    margin-bottom: 20px;
+  }
+  .tab_content{
+    overflow: auto;
+  }
+  .tab_content tr>td>img{
+    width: 80%;
+    margin-left: 10%;
+  }
+  #No1{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 39%;
+    top: -15px;
+  }
+  .No1{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 42%;
+    top: -15px;
+  }
+  .No1Box{
+    position:relative;
+    overflow: visible;
+  }
+  .No1Box img:nth-child(1){
+    width: 80%;
+    margin-left: 10%;
+  }
+  #tab1 tr>td{
+    width: 20%;
+  }
+  .tab_content tr>td{
+    width: 33.33%;
+  }
+}
+/*-------------------PC end--------------------*/

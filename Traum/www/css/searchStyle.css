@@ -1,0 +1,75 @@
+#input{
+
+}
+
+/*----------------Tablat start-----------------*/
+@media screen and (min-width: 640px) {
+
+}
+/*-----------------Tablat end------------------*/
+
+/*------------------PC start-------------------*/
+@media screen and (min-width: 1280px) {
+  #input{
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    background-color: #56BEB7;
+    margin-top: 50px;
+  }
+  #keyWord{
+    width: 30%;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 5%;
+    margin-right: 1%;
+  }
+  .condition{
+    height: 40px;
+    width: 15%;
+    margin-top: 30px;
+    margin-right: 1%;
+    border: 0px;
+    border-radius: 0px;
+    background-color: #F4F8F3;
+    font-size: 1rem;
+    line-height: 40px;
+  }
+  .enter{
+    height: 40px;
+    width: 9%;
+    margin-left: 2%;
+    border: 0px;
+    border-radius: 5px;
+    background-color: #F6DF6F;
+  }
+  h2{
+    margin-top: 20px;
+    margin-left: 5%;
+    color: #17515A;
+    float: left;
+  }
+  #sort{
+    width: 30%;
+    float: right;
+    font-size: 1rem;
+    color: #17515A;
+    margin-right: 5%;
+  }
+  #sort>.condition{
+    width: 70%;
+    border: 0.5px solid #17515A;
+  }
+  .result{
+    width: 90%;
+    margin: auto;
+    overflow: auto;
+    margin-top: 40px;
+    background-color: #56BEB7;
+  }
+  .result img{
+    float: left;
+    height: 140px;
+  }
+}
+/*-------------------PC end--------------------*/

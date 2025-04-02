@@ -1,0 +1,46 @@
+#signup, #Login{
+  width: 50vw;
+  float: left;
+  /* background-color: gray; */
+}
+.container{
+  width: 100%;
+  top:100px;
+  margin-top: 50px;
+  /* overflow: auto; */
+}
+#signup>p, #Login>p{
+  width: 80%;
+  display: block;
+  height: 60px;
+  font-size: 2rem;
+  text-align: center;
+  border-bottom: 5px solid #D15B59;
+  margin: 0 10% 0 10%;
+}
+form{
+  width: 80%;
+  margin-left: 10%;
+}
+input{
+  border: 1px solid #1A4F56;
+  cursor:pointer;
+}
+.enter{
+  width: 100px;
+  height: 30px;
+  color: white;
+  border: 1px solid #D15B59;
+  background-color: #D15B59;
+  font-size: 1.1rem;
+}
+#signup .enter{
+  margin-left: 90px;
+}
+#Login td .enter{
+  margin-left: 220px;
+}
+td p{
+  text-align: right;
+  margin-right: 10px;
+}

@@ -1,0 +1,110 @@
+#Ranking.Container{
+  overflow: auto;
+  margin-left: 5%;
+  background-color: #F4F8F3;
+  margin-top: 5px;
+}
+.Container{
+  width: 90%;
+  background-color: #F6DF6F;
+}
+.RankingArea{
+  width: 80%;
+  margin-left: 10%;
+  border: 3px solid #50A49E;
+  border-radius: 10px;
+  overflow: auto;
+  margin-bottom: 50px;
+}
+.areaRanking{
+  float: left;
+  overflow: auto;
+  margin-right: 5%;
+}
+@media screen and (min-width: 1280px) {
+  #weekStar{
+    margin-bottom: 50px;
+    overflow: auto;
+  }
+  .titleImg{
+    margin-left: 10%;
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .titleImg img{
+    float: left;
+  }
+  .titleImg h1{
+    float: left;
+  }
+  .star{
+    width: 33.3%;
+    float: left;
+  }
+  .star img{
+    width: 100%;
+  }
+  #Ranking.Container{
+    margin-bottom: 20px;
+  }
+  table{
+    margin: 50px;
+  }
+  tr, td{
+    font-family: "微軟正黑體";
+    /*border: 1px solid;*/
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    text-align: center;
+    padding: 0px;
+  }
+  table tr:nth-child(1) td{
+    padding-top: 50px;
+  }
+  #total tr td{
+    width: 20%;
+  }
+  #Area table{
+    border-top: 5px solid #1B4F56;
+  }
+  #Area table:nth-child(1){
+    border: 0px;
+  }
+  #total table td img:nth-child(1){
+    width: 80%;
+    margin-left: 10%;
+  }
+  #Area td{
+    width: 25%;
+  }
+  td img{
+    width: 100%;
+  }
+  .No1Box{
+    position:relative;
+    overflow: visible;
+  }
+  #total .No1{
+    left: 39%;
+    top: -25px;
+  }
+  .No1{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+  }
+  #Area .No1{
+    left: 39%;
+    top: -25px;
+  }
+  .areaRanking{
+    float: left;
+    overflow: auto;
+    margin-right: 5%;
+  }
+  .areaRanking a{
+    display: block;
+    overflow: auto;
+  }
+}
